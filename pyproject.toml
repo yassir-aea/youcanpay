@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ialog"
-version = "0.1.0"
+version = "0.2.0"
 description = "AI-powered log analysis tool using Groq API"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "Yassir Ait Elaizzi", email = "yassir.aitelaizzi@gmail.com"}
 ]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -18,10 +18,10 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: POSIX :: Linux",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.6",
-    "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
     "Topic :: System :: Systems Administration",
     "Topic :: Security",
 ]
@@ -34,15 +34,13 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yassir-aea/scanux"
+Homepage = "https://github.com/yassir-aea/ialog"
+Documentation = "https://github.com/yassir-aea/ialog#readme"
+Repository = "https://github.com/yassir-aea/ialog.git"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
-packages = ["scanux"]
+packages = ["ialog"]
 
 [project.scripts]
-ialog = "ialog.cli:main"
-
-[tool.setuptools.packages.find]
-where = ["src"]
-include = ["ialog*"] 
+ialog = "ialog.cli:main" 
