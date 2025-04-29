@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "youcanpay-sdk"
+version = "0.1.0"
+description = "SDK for integrating YouCan Pay API with Python"
+readme = "README.md"
+requires-python = ">=3.6"
+license = "MIT"
+dependencies = ["requests>=2.25.1"]
+authors = [{name = "Yassir AIT EL AIZZI", email = "yassir.aitelaizzi@gmail.com"}]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[project.urls]
+Homepage = "https://github.com/yassir-aea/youcanpay"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["youcanpay"] 
